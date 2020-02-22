@@ -1,0 +1,118 @@
+.navBar {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-toggler .icon-bar {
+    margin: 7px;
+    display: block;
+    width: 22px;
+    height: 1px;
+    background-color: #ce4949;
+    border-radius: 1px;
+  }
+
+  .container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  .navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+  /* Current/active navbar link */
+  .active {
+    background-color: #4CAF50;
+  }
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+
+/* smaller than 1027 */
+@media only screen and (max-width: 1027px) {
+    .navBar {
+      display: none;
+      transition: top 0.3s;
+    }
+}
+
+/* bigger than 1027 */
+@media only screen and (min-width: 1027px) {
+    .mob-navBar {
+      display: none;
+    }
+}
+
+.navBar .navBar-wrapper {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    max-width: 1400px;
+}
+
+.navBar .navBar-wrapper .navBar-item{
+    padding: 60px;
+}
+
+.navBar .navBar-wrapper .navBar-item a{
+    text-decoration: none;
+    color:rgb(58, 55, 55);
+    text-shadow: darkslategray 2px 2px 2px 2px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: initial;
+    
+}
+.b {
+    color: rgb(7, 7, 7);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 80px;
+    height: 80px;
+    margin-block-start: 15px;
+    
+}
