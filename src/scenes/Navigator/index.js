@@ -1,5 +1,6 @@
 import React from 'react';
 import {Route,Switch,withRouter,Redirect} from 'react-router-dom';
+import { Slide } from 'react-slideshow-image';
 
 
 import NavBar from '../../components/NavBar';
@@ -11,13 +12,15 @@ import Checkout from '../Checkout';
 import User from '../User';
 import Login from '../User/Login';
 import Register from '../User/Register';
+import Header from '../Header';
+import Footer from "../Footer";
+
 
 function Navigator(){
 
 return (<div> 
     <NavBar />
     <div className = "scene">
-    
 
     <Switch>
         <Route path="/" exact>
@@ -48,10 +51,9 @@ return (<div>
 
 
     </Switch>
-
+    <Footer/>
+    <hr />
     </div>
-
-
 </div>);
 }
 export default withRouter(Navigator);

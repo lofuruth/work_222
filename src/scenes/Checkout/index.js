@@ -3,7 +3,10 @@ import React from 'react';
 
 function Checkout (){
 
-    return <div>
+    return <div style={{
+        marginTop: 50,
+        height: 500
+    }}>
         Checkout
     </div>
 }

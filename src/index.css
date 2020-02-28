@@ -11,3 +11,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.home1{
+  width:20%;
+  
+}
+
+.dot1{
+  display: flex;
+  flex-direction: row;
+}
+
+.circle {
+  border: red;
+  background-color: #FFFFFF;
+  height: 100px;
+  width: 100px;
+}
+
+.dot {
+  padding: 25px;
+  margin: 20px;
+  height: 100%;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: table-caption;
+}
+
+.box1{
+  border: 8px solid rgb(19, 16, 16);
+  padding:  20px;
+  margin: 20px;
+  border-radius: 20px;
+  font-size: 24px;
+  line-height: 2;
+}

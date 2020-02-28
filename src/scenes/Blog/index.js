@@ -3,7 +3,10 @@ import React from "react";
 
 function Blog (){
 
-    return <div>
+    return <div style={{
+        marginTop: 50,
+        height: 500
+    }}>
 
         Blog
     </div>

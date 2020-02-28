@@ -5,7 +5,7 @@ import Navigator from '../Navigator';
 
 function App(){
 
-return <BrowserRouter>
+return <BrowserRouter >
 
         <Navigator/>
 
