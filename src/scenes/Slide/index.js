@@ -2,9 +2,9 @@
 // import { Slide } from 'react-slideshow-image';
  
 // const slideImages = [
-//   'images/slide_2.jpg',
-//   'images/slide_3.jpg',
-//   'images/slide_4.jpg'
+//   'logo192.png',
+//   'logo192.png',
+//   'logo192.png'
 // ];
  
 // const properties = {
@@ -18,22 +18,22 @@
 //   }
 // }
  
-// const Slideshow = () => {
+// const Slide = () => {
 //   return (
 //     <div className="slide-container">
 //       <Slide {...properties}>
 //         <div className="each-slide">
-//           <div style={{'backgroundImage': `url(${slideImages[0]})`}}>
+//           <div style={{'backgroundImage': `url(${slideImages})`}}>
 //             <span>Slide 1</span>
 //           </div>
 //         </div>
 //         <div className="each-slide">
-//           <div style={{'backgroundImage': `url(${slideImages[1]})`}}>
+//           <div style={{'backgroundImage': `url(${slideImages})`}}>
 //             <span>Slide 2</span>
 //           </div>
 //         </div>
 //         <div className="each-slide">
-//           <div style={{'backgroundImage': `url(${slideImages[2]})`}}>
+//           <div style={{'backgroundImage': `url(${slideImages})`}}>
 //             <span>Slide 3</span>
 //           </div>
 //         </div>
@@ -41,3 +41,4 @@
 //     </div>
 //   )
 // }
+// export default Slide;

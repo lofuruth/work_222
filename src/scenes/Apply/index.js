@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
 
 
-function Product (){
+function Apply (){
 
     return <div style={{
         marginTop: 50,
         height: 500
     }}>
-            
-    
+
+        Apply
     </div>
 }
 
-export default Product;
+export default Apply ;

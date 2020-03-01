@@ -3,8 +3,11 @@ import './footer.css';
 
 function Footer() {
   return (
-    <div className="foot">
-      <h1>This is footer</h1>
+    <div style={{
+      marginTop: 1000,
+      height: 200
+  }}>
+      <h3>This is footer</h3>
     </div>
   );
 }

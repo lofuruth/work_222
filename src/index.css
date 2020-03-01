@@ -19,30 +19,142 @@ code {
 
 .dot1{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
 }
 
 .circle {
   border: red;
   background-color: #FFFFFF;
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .dot {
-  padding: 25px;
+  align-self: center;
+  padding: 20px;
   margin: 20px;
-  height: 100%;
+  height: 50px;
   background-color: #bbb;
   border-radius: 50%;
-  display: table-caption;
+  
 }
 
 .box1{
-  border: 8px solid rgb(19, 16, 16);
-  padding:  20px;
-  margin: 20px;
-  border-radius: 20px;
-  font-size: 24px;
-  line-height: 2;
+  border: 2px solid rgb(19, 16, 16);
+  padding:  40px;
+  margin: 50px;
+  width: 200px;
+  font-size: 12px;
+  line-height: 1;
+  
 }
+
+.dotbox1{
+display: flex;
+flex-direction: row;
+flex: 1;
+margin: -20;
+
+
+}
+.dotbox2{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  margin:50px;
+}
+.dotbox3{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  margin: 100px;
+  
+}
+
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid rgb(19, 16, 16);
+  padding:  40px;
+  margin: 50px;
+  font-size: 12px;
+  line-height: 1;
+  background-color: aquamarine;
+  justify-content: center;
+}
+
+.text1{
+  padding:25px;
+  margin: 25px;
+}
+
+.flex-container2{
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid rgb(19, 16, 16);
+  padding:  40px;
+  margin: 50px;
+  font-size: 12px;
+  line-height: 1;
+  background-color: rgb(31, 238, 12);
+ 
+}
+
+.flex-container3{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 2px solid rgb(19, 16, 16);
+  padding:  40px;
+  margin: 50px;
+  font-size: 12px;
+  line-height: 1;
+  background-color: rgb(31, 238, 12);
+ 
+
+}
+
+.flex-container4{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  flex-direction: row;
+  background-color: rgb(43, 95, 236);
+  padding:  30px;
+  margin: 25px;
+  font-size: 12px;
+  line-height: 1;
+  
+}
+
+.centerbox{
+  flex: 1;
+  flex-direction: "row";
+  display: flex;
+  flex-wrap: wrap;
+  
+  
+}
+.leftcolumn{
+  flex: 1;
+  border-color: "#cccccc";
+  width: fit-content;
+  font-Size: 30px;
+  color: "#6a4595";
+  
+}
+
+.rightcolumn{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border-color: "#cccccc";
+  font-Size: 14;
+  margin-Bottom: -1;
+  color: "#6a4595";
+}
+
+
