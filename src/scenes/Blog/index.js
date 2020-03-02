@@ -13,21 +13,24 @@ function Blog(){
 
 <div className = "centerbox">
     
-        <div className = "leftcolumn">
+    <div className = "leftcolumn">
         <div className= "flex-container3">
             <div>Banner+Slogan</div>
          </div> 
-            <div className = "dotbox1">
+            <div className = "dotbox">
                 <img className="dot" src = "../logo192.png "/>
-                <div className="box1">1</div></div>
-            <div className = "dotbox2">
+                <div className="box1">1</div>
+            <div className = "dotbox">
                 <img className="dot" src = "../logo192.png "/>
-                <div className="box1">2</div></div>                
-            <div className="dotbox3">
+                <div className="box1">2</div>         
+            <div className="dotbox">
                 <img className="dot" src = "../logo192.png "/>
-                <div className="box1">3</div></div>
+                <div className="box1">3</div> 
+                </div> 
             </div>
-
+        </div>
+ 
+     </div>
 
     <div className= "rightcolumn">
         <div className = "flex-container4">
