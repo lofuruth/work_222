@@ -58,7 +58,6 @@ code {
   flex-wrap: wrap;
   flex-direction: row;
   flex: 1;
-  
   padding-left: 40px;
   
 }
@@ -143,4 +142,10 @@ code {
   color: "#6a4595";
 }
 
-
+.dotrow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
+ 
+}

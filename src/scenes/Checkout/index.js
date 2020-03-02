@@ -4,10 +4,40 @@ import React from 'react';
 function Checkout (){
 
     return <div style={{
-        marginTop: 50,
-        height: 500
+        marginTop: 40,
+        height: 200
     }}>
-        Checkout
+
+    <img className ="home1"src = "logo192.png" alt="" />
+        <div className = "centerbox">
+        <div className = "leftcolumn">
+        
+            <div className = "flex-container3">1</div>
+            <div className = "flex-container3">2</div>
+            <div className = "flex-container3">3</div>
+            <div className = "flex-container3">4</div>
+        
+            
+        <div className = "dotrow">
+            <img className="dot" src = "../logo192.png "/>
+            
+            <img className="dot" src = "../logo192.png "/>
+            
+            <img className="dot" src = "../logo192.png "/>
+        </div>
+     </div>   
+        
+
+        
+        
+        
+
+        <div className= "rightcolumn">
+        <div className = "flex-container4">
+            <div>Gear</div>
+            </div>
+        </div>
+        </div>
     </div>
 }
 
