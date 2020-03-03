@@ -70,6 +70,26 @@ return <div>
             <img className= "b"src= "/logo192.png" />
               <div><b>Gear Credit Limited</b></div>
    </div>  
+   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar"></div>
+  <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>    
+    </ul> 
+  </nav>
+              
+              
               <div className="container" onclick="myFunction(this)">
         <div id="wrapper" class="toggled"/>
             <div className="bar1"></div>

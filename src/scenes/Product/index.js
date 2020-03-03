@@ -3,12 +3,12 @@ import React from 'react';
 
 function Product (){
 
-    return <div style={{
+    return <div  style={{
         marginTop: 50,
         height: 500
     }}>
             
-    
+
     </div>
 }
 
