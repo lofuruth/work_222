@@ -4,7 +4,7 @@ import {Route,Switch,withRouter,Redirect} from 'react-router-dom';
 
 
 import NavBar from '../../components/NavBar';
-import Front from '../Front';
+
 import Home from '../Home';
 import Product from '../Product';
 import Blog from '../Blog';
@@ -25,9 +25,7 @@ return (<div>
     <div className = "scene">
 
     <Switch>
-        <Route path="fronts" exact>
-            <Front />
-        </Route>
+        
         <Route path="/" exact>
             <Home />
         </Route>

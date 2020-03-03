@@ -24,17 +24,20 @@ function User(props){
     },[]);
 
     function loadingScreen(){
+    
         return (<div className="loading">
             Loading...
         </div>);
     }
 
     return (
+        
         <div className="user">
             <div className="wrapper">
                 { isLoading ? loadingScreen() : (profile ? <Profile profile={profile}/> : <Redirect to="/users/login"/>)}
             </div>
         </div>
+        
     );
 }
 

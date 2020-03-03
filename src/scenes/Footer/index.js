@@ -3,9 +3,9 @@ import './footer.css';
 
 function Footer() {
   return (
-    <div style={{
+    <div className = "foot"style={{
       marginTop: 1000,
-      height: 200
+      height: 30
   }}>
       <h3>This is footer</h3>
     </div>

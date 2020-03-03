@@ -21,8 +21,8 @@ return <div>
             </div>
             
             <div className = "navBar-item">
-                <Link to ="fronts" style={{fontWeight : p==="/fronts"? 700:300}}>
-                首頁￼
+                <Link to ="/applys" style={{fontWeight : p==="/applys"? 700:300}}>
+                ￼首頁
                 </Link>
             </div>
             <div className = "navBar-item">
@@ -51,7 +51,7 @@ return <div>
                 </Link>
             </div>
             <div className = "navBar-item">
-                <Link to = "/applys" style={{fontWeight : p==="/applys"? 700:300}}>
+                <Link to = "/users" style={{fontWeight : p==="/users"? 700:300}}>
                 貸款熱線 Tel 12345678
                 </Link>
             </div>
@@ -98,7 +98,7 @@ return <div>
             </div>
 
         <div className = "navBar-item">
-                <Link to ="fronts" style={{fontWeight : p==="/fronts"? 700:300}}>
+                <Link to ="/applys" style={{fontWeight : p==="/applys"? 700:300}}>
                 首頁￼
                 </Link>
             </div>
@@ -117,6 +117,7 @@ return <div>
                 常見問題
                 </Link>
         </div>
+
          <div className = "navBar-item">
                 <Link to ="/products" style={{fontWeight : p==="/products"? 700:300}}>
                 聯絡我們

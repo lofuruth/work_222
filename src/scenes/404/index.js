@@ -1,10 +1,14 @@
 import React from 'react';
 
+function NotFound (){
 
-function NotFound(){
+    return <div style={{
+        marginTop: 50,
+        height: 500
+    }}>
 
-    return <div>
-    404 Not Found 
+        Apply
     </div>
 }
-export default NotFound ;
+
+export default NotFound;

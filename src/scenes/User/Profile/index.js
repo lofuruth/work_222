@@ -20,6 +20,7 @@ function UserProfile(props){
     }
 
     return (
+        
         <div className="profile">
             <div className="profile-wrapper">
                 <h1>Profile</h1>
@@ -36,6 +37,7 @@ function UserProfile(props){
                 </button>
             </div>
         </div>
+        
     );
 }
 

@@ -1,15 +1,15 @@
 import React from 'react';
+import { Map, GoogleApiWrapper } from 'google-maps-react';
 
 
 function Product (){
-
-    return <div  style={{
-        marginTop: 50,
-        height: 500
+    
+    return <div style={{
+        marginTop: 10,
+        height: 100
     }}>
-            
+        </div>
 
-    </div>
 }
 
 export default Product;
