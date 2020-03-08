@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../index.css';
 
 //question 
 
@@ -8,13 +9,16 @@ function Checkout (){
         marginTop: 40,
         height: 200
     }}>
+        <div className = "c-container">
+            <div className = "c1-container"></div>
+            <div className = "c2-container">1</div>
+            <div className = "c3-container">2</div>
+            <div className = "c2-container">3</div>
+            <div className = "c3-container">4</div>
+            <div className = "c2-container">5</div>
+            <div className = "c3-container">6</div>
+        </div>
 
-        <div className = "Qbox">
-            <div className = "Qleft">xxxxxxx</div>
-            <div className = "Qright">xxxxxx</div>
-            </div>
-            <div className = "Qdown">xxxxxx</div>
-            
         </div>
 }
 export default Checkout ;

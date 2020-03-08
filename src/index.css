@@ -229,3 +229,47 @@ code {
   margin: 25px;
   padding: 20px;
 }
+
+.c-container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: ;
+  
+}
+
+.c1-container{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  flex-wrap: wrap;
+  background-color: green;
+  padding:  100px;
+  margin: 25px;
+  
+}
+
+.c2-container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 75%;
+  padding:  20px;
+  margin: 25px;
+  align-self:  center;
+  font-size: 12px;
+  background-color: rgb(62, 202, 236);
+}
+
+.c3-container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 75%;
+  padding:  20px;
+  margin: 2px;
+  height: 100px;
+  align-self:  center;
+  font-size: 12px;
+  background-color: rgb(60, 62, 63);
+}

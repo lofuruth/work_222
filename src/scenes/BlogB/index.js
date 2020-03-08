@@ -1,4 +1,4 @@
-import React from 'react';
+import React from './node_modules/react';
 import '../../index.css';
 
 //borrow money 2
@@ -28,8 +28,7 @@ return <div style={{
         <img className="dot" src = "../logo192.png "/>
     </div>
  </div>   
-    
-
+ 
     <div className= "rightcolumn">
     <div className = "flex-container4">
         <div>Gear</div>

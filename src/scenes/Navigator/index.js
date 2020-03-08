@@ -8,7 +8,7 @@ import NavBar from '../../components/NavBar';
 import Home from '../Home';
 import Product from '../Product';
 import Blog from '../Blog';
-import BlogB from '../BlogB';
+import Blogb from '../Blogb';
 import NotFound from '../404';
 import Checkout from '../Checkout';
 import User from '../User';
@@ -36,8 +36,8 @@ return (<div>
         <Route path="/blogs" exact>
             <Blog/>
         </Route>
-        <Route path="/blogs/b" exact>
-            <BlogB/>
+        <Route path="/blog/bs" exact>
+            <Blogb/>
         </Route>
         <Route path="/checkouts" exact>
             <Checkout/>

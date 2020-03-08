@@ -3,6 +3,8 @@ import Oneshop from 'oneshop.web';
 import { Redirect } from 'react-router-dom';
 import Profile from './Profile';
 import './user.css';
+import '../../index.css';
+
 
 function User(props){
     
@@ -32,11 +34,19 @@ function User(props){
 
     return (
         
-        <div className="user">
-            <div className="wrapper">
-                { isLoading ? loadingScreen() : (profile ? <Profile profile={profile}/> : <Redirect to="/users/login"/>)}
-            </div>
+        <div>
+            
+            <div className = "Qbox">
+            {/* <div className="wrapper">
+            { isLoading ? loadingScreen() : (profile ? <Profile profile={profile}/> : <Redirect to="/users/login"/>)}
+            </div> */}
+            <div className = "Qleft" >
+            xxxxxx</div>
+            <div className = "Qright">xxxxxx</div>
         </div>
+            <div className = "Qdown">xxxxxx</div>
+        </div>
+        
         
     );
 }
