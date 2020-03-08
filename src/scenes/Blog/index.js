@@ -1,7 +1,7 @@
 import React from "react";
 import '../../index.css';
 
-
+//borrow money 1
 function Blog(){ 
     
     return  <div style={{

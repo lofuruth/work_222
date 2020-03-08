@@ -165,5 +165,67 @@ code {
   flex-wrap: wrap;
 }
 
+.contactus{
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  padding: 35px;
+  margin: 20px;
+}
+
+.contactbox{
+  flex:1;
+  margin: 15px;
+  padding: 10px;
+  
+}
 
 
+.Qbox{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 15px;
+  margin: 15px;
+
+}
+.Qleft {
+  display: flex;
+  flex:1;
+  flex-direction:row ;
+  width: 100%;
+  flex-wrap: wrap;
+  border: 2px solid rgb(19, 16, 16);
+  padding:  10px;
+  margin: 50px;
+  line-height: 1;
+  background-color: rgb(34, 123, 238);
+  justify-content: left;
+  
+}
+.Qright{
+  display: flex;
+  flex:1;
+  flex-direction:row ;
+  height: 300px;
+  width: 250px;
+  flex-wrap: wrap;
+  border: 2px solid rgb(19, 16, 16);
+  padding:  10px;
+  margin: 50px;
+  font-size: 12px;
+  line-height: 1;
+  background-color: rgb(226, 143, 48);
+  justify-content: left;
+}
+
+.Qdown{
+  display: flex;
+  flex:1;
+  flex-direction:row ;
+  align-items: stretch;
+  background-color: teal ;
+  flex-wrap: wrap;
+  margin: 25px;
+  padding: 20px;
+}

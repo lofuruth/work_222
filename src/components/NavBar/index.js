@@ -21,39 +21,28 @@ return <div>
             </div>
             
             <div className = "navBar-item">
-                <Link to ="/applys" style={{fontWeight : p==="/applys"? 700:300}}>
-                ￼首頁
-                </Link>
+                <Link to ="/applys" style={{fontWeight : p==="/applys"? 700:300}}>首頁</Link>
             </div>
             <div className = "navBar-item">
-                <Link to ="/" style={{fontWeight : p==="/"? 700:300}}>
-                 關於我們
-                </Link>
+                <Link to ="/" style={{fontWeight : p==="/"? 700:300}}>關於我們</Link>
             </div>
             <div className = "navBar-item">
-                <Link to ="/blogs" style={{fontWeight : p==="/blogs"? 700:300}}>
-                 貸款產品￼
-                </Link>
+                <Link to ="/blogs" style={{fontWeight : p==="/blogs"? 700:300}}>貸款產品</Link>
+            </div>
+            {/* <div className = "navBar-item">
+                <Link to ="/blogbs" style={{fontWeight : p==="/blogbs"? 700:300}}>貸款產品1</Link>
+            </div> */}
+            <div className = "navBar-item">
+                <Link to = "/checkouts" style={{fontWeight : p==="/checkouts"? 700:300}}>常見問題</Link>
             </div>
             <div className = "navBar-item">
-                <Link to = "/checkouts" style={{fontWeight : p==="/checkouts"? 700:300}}>
-                常見問題
-                </Link>
+                <Link to = "/products" style={{fontWeight : p==="/products"? 700:300}}>聯絡我們</Link>
             </div>
             <div className = "navBar-item">
-                <Link to = "/products" style={{fontWeight : p==="/products"? 700:300}}>
-                聯絡我們
-                </Link>
+                <Link to = "/users" style={{fontWeight : p==="/users"? 700:300}}>立即申請</Link>
             </div>
             <div className = "navBar-item">
-                <Link to = "/users" style={{fontWeight : p==="/users"? 700:300}}>
-                ￼立即申請
-                </Link>
-            </div>
-            <div className = "navBar-item">
-                <Link to = "/users" style={{fontWeight : p==="/users"? 700:300}}>
-                貸款熱線 Tel 12345678
-                </Link>
+                <b>貸款熱線 Tel 12345678</b>
             </div>
         </div>
     </div>

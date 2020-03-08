@@ -1,5 +1,6 @@
 import React from 'react';
 
+//question 
 
 function Checkout (){
 
@@ -8,37 +9,12 @@ function Checkout (){
         height: 200
     }}>
 
-    <img className ="home1"src = "logo192.png" alt="" />
-        <div className = "centerbox">
-        <div className = "leftcolumn">
-        
-            <div className = "flex-container3">1</div>
-            <div className = "flex-container3">2</div>
-            <div className = "flex-container3">3</div>
-            <div className = "flex-container3">4</div>
-        
-            
-        <div className = "dotrow">
-            <img className="dot" src = "../logo192.png "/>
-            
-            <img className="dot" src = "../logo192.png "/>
-            
-            <img className="dot" src = "../logo192.png "/>
-        </div>
-     </div>   
-        
-
-        
-        
-        
-
-        <div className= "rightcolumn">
-        <div className = "flex-container4">
-            <div>Gear</div>
+        <div className = "Qbox">
+            <div className = "Qleft">xxxxxxx</div>
+            <div className = "Qright">xxxxxx</div>
             </div>
+            <div className = "Qdown">xxxxxx</div>
+            
         </div>
-        </div>
-    </div>
 }
-
 export default Checkout ;

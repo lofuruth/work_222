@@ -1,7 +1,7 @@
 import React from "react";
 import '../../index.css';
 
-
+//first page
 function Apply(){
     
     return <div style={{

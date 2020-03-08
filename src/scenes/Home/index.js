@@ -2,7 +2,7 @@ import React from 'react';
 import { Slide } from 'react-slideshow-image';
 import '../../index.css';
 
-
+//about us
 
 function Home (){
 
