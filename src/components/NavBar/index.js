@@ -55,7 +55,7 @@ return <div>
                                         history.push(e.target.value);
                                     }}
                                     value="/blogs"
-                                >立即申請1</button>
+                                >立即申請1.....</button>
                             </li>
                             <li>
                                 <button
