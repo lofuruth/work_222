@@ -9,7 +9,9 @@ import '../../index.css';
 function NavBar() {
     
     var p = useLocation().pathname;
+    const history = useHistory();
 
+    
 return <div>
     
     {/* ----------- Desktop Nav Bar ------------- */}
@@ -46,10 +48,24 @@ return <div>
                             display: 'none'
                         }}>
                             <li>
-                                <Link to = "/blogs" style={{fontWeight : p==="/blogs"? 700:300}}>立即申請1</Link>
+                                <button
+                                    type="button"
+                                    onClick={e => {
+                                        e.target.parentNode.parentNode.style.display = 'none';
+                                        history.push(e.target.value);
+                                    }}
+                                    value="/blogs"
+                                >立即申請1</button>
                             </li>
                             <li>
-                                <Link to = "/blog/bs" style={{fontWeight : p==="/blog/bs"? 700:300}}>立即申請2</Link>
+                                <button
+                                    type="button"
+                                    onClick={e => {
+                                        e.target.parentNode.parentNode.style.display = 'none';
+                                        history.push(e.target.value);
+                                    }}
+                                    value="/blog/bs"
+                                >立即申請2</button>
                             </li>
                         </ul>
                     </li>
