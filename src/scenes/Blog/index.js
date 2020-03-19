@@ -18,13 +18,13 @@ function Blog(){
             <div>Banner+Slogan</div>
          </div> 
             <div className = "dotbox">
-                <img className="dot" src = "../logo192.png "/>
+                <img className="dot" src = "../logo192.png "alt=""/>
                 <div className="box1">1</div>
             <div className = "dotbox">
-                <img className="dot" src = "../logo192.png "/>
+                <img className="dot" src = "../logo192.png "alt=""/>
                 <div className="box1">2</div>         
             <div className="dotbox">
-                <img className="dot" src = "../logo192.png "/>
+                <img className="dot" src = "../logo192.png "alt=""/>
                 <div className="box1">3</div> 
                 </div> 
             </div>

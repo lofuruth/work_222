@@ -1,5 +1,6 @@
 import React from 'react';
-import {Route,Switch,withRouter,Redirect} from 'react-router-dom';
+import {Route,Switch,withRouter} from 'react-router-dom';
+
 
 
 
@@ -8,7 +9,7 @@ import NavBar from '../../components/NavBar';
 import Home from '../Home';
 import Product from '../Product';
 import Blog from '../Blog';
-import Blogb from '../Blogb';
+import BlogB from '../BlogB';
 import NotFound from '../404';
 import Checkout from '../Checkout';
 import User from '../User';
@@ -33,11 +34,18 @@ return (<div>
         <Route path="/products" exact>
             <Product/>
         </Route>
+        {/* <Route path="/blogs/:slug" component={Blog}>
+        <Blog/>
+        </Route>
+        <Route path="/blog/bs/:slug" component={BlogB}>
+        <Blogb/>
+        </Route> */}
+        
         <Route path="/blogs" exact>
             <Blog/>
         </Route>
         <Route path="/blog/bs" exact>
-            <Blogb/>
+            <BlogB/>
         </Route>
         <Route path="/checkouts" exact>
             <Checkout/>

@@ -74,4 +74,18 @@
     margin-block-start: 15px;
     
 }
+
+.menubox{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20;
+  margin: 20;
+}
+
+.menudownbox{
+  flex-direction: column;
   
+  
+}

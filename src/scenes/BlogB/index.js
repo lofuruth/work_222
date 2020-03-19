@@ -1,5 +1,6 @@
-import React from './node_modules/react';
+import React from 'react';
 import '../../index.css';
+
 
 //borrow money 2
 
@@ -21,11 +22,11 @@ return <div style={{
     
         
     <div className = "dotrow">
-        <img className="dot" src = "../logo192.png "/>
+        <img className="dot" src = "../logo192.png "alt=""/>
         
-        <img className="dot" src = "../logo192.png "/>
+        <img className="dot" src = "../logo192.png "alt=""/>
         
-        <img className="dot" src = "../logo192.png "/>
+        <img className="dot" src = "../logo192.png "alt=""/>
     </div>
  </div>   
  

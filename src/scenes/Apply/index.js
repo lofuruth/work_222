@@ -10,20 +10,20 @@ function Apply(){
     }}>
 
 <div className ="flex-container1">
-     <img src = "../logo192.png" />
+     <img src = "../logo192.png" alt=""/>
      <div className ="flex-container5">xxxxx</div>
      </div>
     <div className = "dot1" >
                 
-                <img className="dot" src = "../logo192.png "/>
+                <img className="dot" src = "../logo192.png " alt=""/>
                 <div className="box1">
                     content
                 </div>
-                <img className="dot" src = "../logo192.png "/>
+                <img className="dot" src = "../logo192.png "alt=""/>
                 <div className="box1">
                     content
                 </div>
-                <img className="dot" src = "../logo192.png "/>
+                <img className="dot" src = "../logo192.png "alt=""/>
                 <div className="box1">
                     content
                 </div>

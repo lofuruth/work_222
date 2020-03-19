@@ -1,10 +1,12 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation,useHistory,Redirect} from 'react-router-dom';
 import './navBar.css';
 import '../../index.css';
 
 
-function NavBar (){
+
+
+function NavBar() {
     
     var p = useLocation().pathname;
 
@@ -27,12 +29,33 @@ return <div>
             <div className = "navBar-item">
                 <Link to ="/" style={{fontWeight : p==="/"? 700:300}}>關於我們</Link>
             </div>
-            <div className = "navBar-item">
-                <Link to ="/blogs" style={{fontWeight : p==="/blogs"? 700:300}}>貸款產品</Link>
+            
+            <div style={{ margin: 8 }}>
+            <div style={{ height: 3 }}/>
+            <div >
+                <ul>
+                    <li>
+                        <button
+                            type="button"
+                            onClick={e => {
+                                const status = e.target.nextSibling.style.display || 'block';
+                                e.target.nextSibling.style.display = (status == 'block' ? 'none' : 'block');
+                            }}
+                        >Dropdown</button>
+                        <ul style={{
+                            display: 'none'
+                        }}>
+                            <li>
+                                <Link to = "/blogs" style={{fontWeight : p==="/blogs"? 700:300}}>立即申請1</Link>
+                            </li>
+                            <li>
+                                <Link to = "/blog/bs" style={{fontWeight : p==="/blog/bs"? 700:300}}>立即申請2</Link>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-            <div className = "navBar-item">
-                <Link to ="/blog/bs" style={{fontWeight : p==="/blog/bs"? 700:300}}>貸款產品1</Link>
-            </div>
+        </div>
             <div className = "navBar-item">
                 <Link to = "/checkouts" style={{fontWeight : p==="/checkouts"? 700:300}}>常見問題</Link>
             </div>
@@ -47,9 +70,6 @@ return <div>
             </div>
         </div>
     </div>
-    
-    
-
 
     {/* ----------- Mobile Nav Bar ------------- */}
     
@@ -91,19 +111,25 @@ return <div>
         <div className = "navBar-item">
                 <Link to ="/" style={{fontWeight : p==="/"? 700:300}}>關於我們</Link>
         </div>
-        <div className = "navBar-item">
-                <Link to ="/blogs" style={{fontWeight : p==="/blogs"? 700:300}}>貸款產品￼</Link>
-        </div>
-        <div className = "navBar-item">
-                <Link to ="/blog/bs" style={{fontWeight : p==="/blog/bs"? 700:300}}>貸款產品1</Link>
+        <div style={{ margin: 20 }}>
+            <div style={{ height: 100 }}/>
+            <div>
+                {/* <Dropdown
+                    trigger={['click']}
+                    overlay={menu}
+                    animation="slide-up"
+                    onVisibleChange={onVisibleChange}>
+                    <button style={{ width: 100 }}>貸款產品</button>
+                </Dropdown> */}
             </div>
+        </div>
         <div className = "navBar-item">
                 <Link to ="/checkouts" style={{fontWeight : p==="/checkouts"? 700:300}}>常見問題</Link>
         </div>
         <div className = "navBar-item">
                 <Link to ="/products" style={{fontWeight : p==="/products"? 700:300}}>聯絡我們</Link>
         </div>
-        <div className = "navBar-item">
+        <div className = "navBar-item"> 
                 <Link to = "/users" style={{fontWeight : p==="/users"? 700:300}}>立即申請</Link>
         </div>
         <div className = "navBar-item">
@@ -112,19 +138,6 @@ return <div>
         </div>
     </div>
     </div>
-    </div>;
-   
+    </div>
 }
-
 export default NavBar ;   
-
-    
- 
-
-    
-    
-
-   
-
-
-

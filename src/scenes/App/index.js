@@ -14,5 +14,4 @@ return <BrowserRouter >
         </BrowserRouter>;
         
     }
-    
     export default App;
