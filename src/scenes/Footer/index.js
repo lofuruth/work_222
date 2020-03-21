@@ -7,9 +7,9 @@ function Footer() {
       marginTop: 1000,
       height: 30
   }}>
-      <h3>This is footer</h3>
+      <h3>忠告：借錢梗要還，咪俾錢中介 Warning: You have to repay your loans. Don’t pay any intermediaries.
+</h3>
     </div>
   );
 }
-
 export default Footer;

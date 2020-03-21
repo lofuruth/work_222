@@ -43,7 +43,7 @@ return <div>
                                 const status = e.target.nextSibling.style.display || 'block';
                                 e.target.nextSibling.style.display = (status == 'block' ? 'none' : 'block');
                             }}
-                        >Dropdown</button>
+                        >貸款產品</button>
                         <ul style={{
                             display: 'none'
                         }}>
@@ -55,7 +55,7 @@ return <div>
                                         history.push(e.target.value);
                                     }}
                                     value="/blogs"
-                                >立即申請1.....</button>
+                                >私人貸款</button>
                             </li>
                             <li>
                                 <button
@@ -65,7 +65,7 @@ return <div>
                                         history.push(e.target.value);
                                     }}
                                     value="/blog/bs"
-                                >立即申請2</button>
+                                >物業接揭</button>
                             </li>
                         </ul>
                     </li>
@@ -82,7 +82,7 @@ return <div>
                 <Link to = "/users" style={{fontWeight : p==="/users"? 700:300}}>立即申請</Link>
             </div>
             <div className = "navBar-item">
-                <b>貸款熱線 Tel 12345678</b>
+                <b>貸款熱線:3700 0018  Service Hotline: 3700 0018 </b>
             </div>
         </div>
     </div>

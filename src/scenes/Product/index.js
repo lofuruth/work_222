@@ -26,13 +26,14 @@ function Product (){
             >hahahah</div>
         </GoogleMapReact>
         <div className = "contactus">
-            <div className = "contactbox">address:xxxxxxxxxxxxx</div>
+            <div className = "contactbox">如有任何查詢歡迎留言<br></br>Tell us about your issue so we can help you more quickly.</div>
             <br></br>
-            <div className = "contactbox">office hour: 0900-1900</div>
+            <div className = "contactbox">電話:  PHONE:3700 0018</div>
             <br></br>
-            <div className = "contactbox">telephone:12345678</div>
+            <div className = "contactbox">電郵:  EMAIL:info@gearcredit.com</div>
             <br></br>
-            <div className = "contactbox">email address:abcdefghijk</div>
+            <div className = "contactbox">地址:香港中環德輔道中104號詹氏商業大廈4樓全層<br></br>ADDRESS:
+4/F, Jim’s Commercial Building, 104 Des Voeux Road Central, Central, Hong Kong</div>
         </div>
     </div>
 

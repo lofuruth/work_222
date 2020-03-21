@@ -234,7 +234,7 @@ code {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: ;
+  justify-content: center;
   
 }
 
@@ -271,5 +271,5 @@ code {
   height: 100px;
   align-self:  center;
   font-size: 12px;
-  background-color: rgb(60, 62, 63);
+  background-color: rgb(138, 141, 143);
 }
