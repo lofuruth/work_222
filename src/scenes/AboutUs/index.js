@@ -8,7 +8,7 @@ import Banner2 from '../../resources/imgs/abt-banner2.jpg';
 
 //about us
 
-function Home (){
+function Home() {
 
     return <div style={{
         marginTop: 10,

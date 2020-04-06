@@ -16,6 +16,12 @@ return <div>
     
     {/* ----------- Desktop Nav Bar ------------- */}
     <div className = "navBar">
+
+
+
+
+
+        
         <div className ="navBar-wrapper">
         ￼<meta charset="UTF-8"></meta>
             <div className="navBar-item">

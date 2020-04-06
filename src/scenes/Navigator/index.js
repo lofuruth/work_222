@@ -6,7 +6,12 @@ import {Route,Switch,withRouter} from 'react-router-dom';
 
 import NavBar from '../../components/NavBar';
 
-import Home from '../Home';
+import Home from '../AboutUs';
+
+
+
+
+
 import Product from '../Product';
 import Blog from '../Blog';
 import BlogB from '../BlogB';
@@ -33,7 +38,7 @@ return (<div>
         </Route>
 
 
-        
+
         <Route path="/products" exact>
             <Product/>
         </Route>
