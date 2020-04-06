@@ -29,7 +29,7 @@ return <div>
                 <Link to ="/applys" style={{fontWeight : p==="/applys"? 700:300}}>首頁</Link>
             </div>
             <div className = "navBar-item">
-                <Link to ="/" style={{fontWeight : p==="/"? 700:300}}>關於我們</Link>
+                <Link to ="/about-us" style={{fontWeight : p==="/"? 700:300}}>關於我們</Link>
             </div>
             
             <div style={{ margin: 8 }}>

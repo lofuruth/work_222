@@ -28,9 +28,12 @@ return (<div>
 
     <Switch>
         
-        <Route path="/" exact>
+        <Route path="/about-us" exact>
             <Home />
         </Route>
+
+
+        
         <Route path="/products" exact>
             <Product/>
         </Route>
