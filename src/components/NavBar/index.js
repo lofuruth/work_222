@@ -21,7 +21,7 @@ return <div>
 
 
 
-        
+
         <div className ="navBar-wrapper">
         ￼<meta charset="UTF-8"></meta>
             <div className="navBar-item">
@@ -31,12 +31,16 @@ return <div>
             </div>
             </div>
             
+            
+
             <div className = "navBar-item">
-                <Link to ="/applys" style={{fontWeight : p==="/applys"? 700:300}}>首頁</Link>
+                <Link to ="/" style={{fontWeight : p==="/"? 700:300}}>首頁</Link>
             </div>
             <div className = "navBar-item">
-                <Link to ="/about-us" style={{fontWeight : p==="/"? 700:300}}>關於我們</Link>
+                <Link to ="/about-us" style={{fontWeight : p==="/about-us"? 700:300}}>關於我們</Link>
             </div>
+            
+
             
             <div style={{ margin: 8 }}>
             <div style={{ height: 3 }}/>
@@ -78,12 +82,17 @@ return <div>
                 </ul>
             </div>
         </div>
+
+
             <div className = "navBar-item">
-                <Link to = "/checkouts" style={{fontWeight : p==="/checkouts"? 700:300}}>常見問題</Link>
+                <Link to = "/faqs" style={{fontWeight : p==="/faqs"? 700:300}}>常見問題</Link>
             </div>
             <div className = "navBar-item">
-                <Link to = "/products" style={{fontWeight : p==="/products"? 700:300}}>聯絡我們</Link>
+                <Link to = "/contact-us" style={{fontWeight : p==="/contact-us"? 700:300}}>聯絡我們</Link>
             </div>
+
+
+
             <div className = "navBar-item">
                 <Link to = "/users" style={{fontWeight : p==="/users"? 700:300}}>立即申請</Link>
             </div>

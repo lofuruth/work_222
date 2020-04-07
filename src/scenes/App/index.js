@@ -5,13 +5,9 @@ import Navigator from '../Navigator';
 
 
 
-function App(){
-
-return <BrowserRouter >
-
+function App() {
+    return <BrowserRouter >
         <Navigator/>
-        
-        </BrowserRouter>;
-        
-    }
-    export default App;
+    </BrowserRouter>;
+}
+export default App;

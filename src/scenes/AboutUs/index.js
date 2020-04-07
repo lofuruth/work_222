@@ -6,16 +6,18 @@ import '../../index.css';
 import Banner from '../../resources/imgs/abt-banner.jpg';
 import Banner2 from '../../resources/imgs/abt-banner2.jpg';
 
+
+
 //about us
+function AboutUs() {
 
-function Home() {
-
-    return <div style={{
-        marginTop: 10,
-        height: 100,
-        display: 'flex',
-        justifyContent: 'center'
-    }}>
+    return <div
+        style={{
+            marginTop: 60,
+            display: 'flex',
+            justifyContent: 'center'
+        }}
+    >
         <div
             style={{
                 width: 1024
@@ -73,19 +75,21 @@ function Home() {
                     position: 'relative'
                 }}
             >
-                <div style={{
-                    backgroundColor: 'rgba(22, 30, 20, 0.4)',
-                    position: 'absolute',
-                    top: 0,
-                    bottom: 0,
-                    left: 0,
-                    right: 0,
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    color: 'rgb(255,255,255)',
-                    fontSize: 19
-                }}>
+                <div
+                    style={{
+                        backgroundColor: 'rgba(22, 30, 20, 0.4)',
+                        position: 'absolute',
+                        top: 0,
+                        bottom: 0,
+                        left: 0,
+                        right: 0,
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        color: 'rgb(255,255,255)',
+                        fontSize: 19
+                    }}
+                >
                     <b
                         style={{
                             textShadow: 'rgb(0, 0, 0) 0px 2px'
@@ -97,4 +101,4 @@ function Home() {
     </div>
 }
 
-export default Home;
+export default AboutUs;
