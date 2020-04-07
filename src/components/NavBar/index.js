@@ -15,89 +15,157 @@ function NavBar() {
 return <div>
     
     {/* ----------- Desktop Nav Bar ------------- */}
-    <div className = "navBar">
-
-
-
-
-
-
-        <div className ="navBar-wrapper">
-        ￼<meta charset="UTF-8"></meta>
-            <div className="navBar-item">
-                <div className="navBar-item">
-                < img className= "b" src = "/Images/GearCredit.jpg" alt=""/>
+    <div
+        style={{
+            display: 'flex',
+            justifyContent: 'center'
+        }}
+    >
+        <div
+            style={{
+                display: 'flex',
+                width: 1024,
+                justifyContent: 'space-between'
+            }}
+        >
+            <div>
+                <img src="/Images/GearCredit.jpg" alt="" width="150"/>
                 <div><b>Gear Credit Limited</b></div>
             </div>
-            </div>
-            
-            
+            <div
+                style={{
+                    display: 'flex',
+                    alignItems: 'center'
+                }}
+            >
+                <div>
+                    <Link to ="/" style={{
+                        fontWeight : (p === "/" ? 700 : 300),
+                        color: '#008D83',
+                        fontSize: 15,
+                        padding: '0 10px'
+                    }}>首頁</Link>
+                </div>
+                <div>
+                    <Link to ="/about-us" style={{
+                        fontWeight: (p === "/about-us"? 700 : 300),
+                        color: '#008D83',
+                        fontSize: 15,
+                        padding: '0 10px'
+                    }}>關於我們</Link>
+                </div>
 
-            <div className = "navBar-item">
-                <Link to ="/" style={{fontWeight : p==="/"? 700:300}}>首頁</Link>
-            </div>
-            <div className = "navBar-item">
-                <Link to ="/about-us" style={{fontWeight : p==="/about-us"? 700:300}}>關於我們</Link>
-            </div>
-            
 
-            
-            <div style={{ margin: 8 }}>
-            <div style={{ height: 3 }}/>
-            <div >
-                <ul>
-                    <li>
-                        <button
-                            type="button"
-                            onClick={e => {
-                                const status = e.target.nextSibling.style.display || 'block';
-                                e.target.nextSibling.style.display = (status == 'block' ? 'none' : 'block');
+                <div>
+                    <ul
+                        style={{
+                            padding: 0
+                        }}
+                    >
+                        <li
+                            style={{
+                                listStyle: 'none',
+                                position: 'relative'
                             }}
-                        >貸款產品</button>
-                        <ul style={{
-                            display: 'none'
-                        }}>
-                            <li>
-                                <button
-                                    type="button"
-                                    onClick={e => {
-                                        e.target.parentNode.parentNode.style.display = 'none';
-                                        history.push(e.target.value);
+                        >
+                            <button
+                                type="button"
+                                onClick={e => {
+                                    const status = e.target.nextSibling.style.display || 'block';
+                                    e.target.nextSibling.style.display = (status == 'block' ? 'none' : 'block');
+                                }}
+                                style={{
+                                    color: '#008D83',
+                                    fontSize: 15,
+                                    borderWidth: 0,
+                                    backgroundColor: 'transparent',
+                                    cursor: 'pointer',
+                                    padding: '0 10px',
+                                    fontWeight: ((p === "/loan" || p === "/mortgage") ? 700 : 300),
+                                    textDecoration: 'underline'
+                                }}
+                            >貸款產品</button>
+                            <ul style={{
+                                display: 'none',
+                                position: 'absolute',
+                                left: 0,
+                                right: 0,
+                                padding: 0,
+                                margin: 0
+                            }}>
+                                <li
+                                    style={{
+                                        listStyle: 'none'
                                     }}
-                                    value="/blogs"
-                                >私人貸款</button>
-                            </li>
-                            <li>
-                                <button
-                                    type="button"
-                                    onClick={e => {
-                                        e.target.parentNode.parentNode.style.display = 'none';
-                                        history.push(e.target.value);
+                                >
+                                    <button
+                                        type="button"
+                                        onClick={e => {
+                                            e.target.parentNode.parentNode.style.display = 'none';
+                                            history.push(e.target.value);
+                                        }}
+                                        value="/loan"
+                                        style={{
+                                            cursor: 'pointer'
+                                        }}
+                                    >私人貸款</button>
+                                </li>
+                                <li
+                                    style={{
+                                        listStyle: 'none'
                                     }}
-                                    value="/blog/bs"
-                                >物業接揭</button>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
+                                >
+                                    <button
+                                        type="button"
+                                        onClick={e => {
+                                            e.target.parentNode.parentNode.style.display = 'none';
+                                            history.push(e.target.value);
+                                        }}
+                                        value="/mortgage"
+                                        style={{
+                                            cursor: 'pointer'
+                                        }}
+                                    >物業按揭</button>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
 
 
-            <div className = "navBar-item">
-                <Link to = "/faqs" style={{fontWeight : p==="/faqs"? 700:300}}>常見問題</Link>
-            </div>
-            <div className = "navBar-item">
-                <Link to = "/contact-us" style={{fontWeight : p==="/contact-us"? 700:300}}>聯絡我們</Link>
-            </div>
+                <div>
+                    <Link to="/faqs" style={{
+                        fontWeight : (p === "/faqs" ? 700 : 300),
+                        color: '#008D83',
+                        fontSize: 15,
+                        padding: '0 10px'
+                    }}>常見問題</Link>
+                </div>
+                <div>
+                    <Link to="/contact-us" style={{
+                        fontWeight: (p === "/contact-us" ? 700 : 300),
+                        color: '#008D83',
+                        fontSize: 15,
+                        padding: '0 10px'
+                    }}>聯絡我們</Link>
+                </div>
 
 
-
-            <div className = "navBar-item">
-                <Link to = "/users" style={{fontWeight : p==="/users"? 700:300}}>立即申請</Link>
-            </div>
-            <div className = "navBar-item">
-                <b>貸款熱線:3700 0018  Service Hotline: 3700 0018 </b>
+                <div>
+                    <Link to="/users" style={{
+                        fontWeight: (p === "/users" ? 700 : 300),
+                        color: '#008D83',
+                        fontSize: 15,
+                        padding: '0 10px'
+                    }}>立即申請</Link>
+                </div>
+                <div
+                    style={{
+                        textAlign: 'center'
+                    }}
+                >
+                    <b>貸款熱線: 3700 0018<br/>Service Hotline: 3700 0018</b>
+                </div>
             </div>
         </div>
     </div>

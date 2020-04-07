@@ -10,19 +10,17 @@ import Home from '../AboutUs';
 
 
 
-
-
 import Product from '../ContactUs';
-import Blog from '../Blog';
-import BlogB from '../BlogB';
+import Loan from '../Loan';
+import Mortgage from '../Mortgage';
 import NotFound from '../404';
 import Checkout from '../Faqs';
 import User from '../User';
 import Login from '../User/Login';
 import Register from '../User/Register';
 import Apply from '../Home';
-import Header from '../Header';
 import Footer from "../Footer";
+
 
 
 function Navigator() {
@@ -51,11 +49,11 @@ function Navigator() {
                     <Blogb/>
                     </Route> */}
                     
-                    <Route path="/blogs" exact>
-                        <Blog/>
+                    <Route path="/loan" exact>
+                        <Loan/>
                     </Route>
-                    <Route path="/blog/bs" exact>
-                        <BlogB/>
+                    <Route path="/mortgage" exact>
+                        <Mortgage/>
                     </Route>
                     <Route path="/users" exact>
                         <User/>

@@ -6,7 +6,7 @@ import GoogleMapReact from 'google-map-react';
 function ContactUs() {
     return <div
         style={{
-            marginTop: 10
+            marginTop: 40
         }}
     >
         <div

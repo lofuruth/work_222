@@ -13,7 +13,7 @@ function AboutUs() {
 
     return <div
         style={{
-            marginTop: 60,
+            marginTop: 40,
             display: 'flex',
             justifyContent: 'center'
         }}
