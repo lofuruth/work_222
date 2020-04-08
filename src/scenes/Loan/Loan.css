@@ -1,0 +1,12 @@
+#loan {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#loan .calculator {
+    width: calc(100%-10px);
+    background-color: #008D83;
+    color: #fff;
+    padding: 10px 20px;
+}

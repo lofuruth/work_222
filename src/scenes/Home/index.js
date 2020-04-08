@@ -117,7 +117,12 @@ function Home() {
                     <table width="100%">
                         <thead>
                             <tr>
-                                <td colSpan="3"><b>貸款計算器</b></td>
+                                <td
+                                    colSpan="3"
+                                    style={{
+                                        paddingBottom: 15
+                                    }}
+                                ><b>貸款計算器</b></td>
                             </tr>
                         </thead>
                         <tbody>
@@ -173,6 +178,29 @@ function Home() {
                                 </td>
                             </tr>
                         </tbody>
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <td
+                                    style={{
+                                        paddingTop: 10,
+                                        paddingBottom: 15
+                                    }}
+                                >
+                                    <button
+                                        type="button"
+                                        style={{
+                                            padding: '5px 15px',
+                                            cursor: 'pointer',
+                                            backgroundColor: 'rgb(0,141,131)',
+                                            borderWidth: 0,
+                                            fontSize: 13,
+                                            color: 'rgb(255,255,255)'
+                                        }}
+                                    >計算</button>
+                                </td>
+                            </tr>
+                        </tfoot>
                     </table>
                 </div>
             </div>
@@ -217,7 +245,7 @@ function Home() {
                             padding: 20,
                             textAlign: 'center'
                         }}
-                    >貸款服務 誠實可靠<br/>Honest and Reliable</div>
+                    >貸款服務 誠實可靠</div>
                 </div>
                 <div
                     style={{
@@ -253,7 +281,7 @@ function Home() {
                             padding: 20,
                             textAlign: 'center'
                         }}
-                    >申請手續 簡單快捷<br/>East and Fast Application Process</div>
+                    >申請手續 簡單快捷</div>
                 </div>
                 <div
                     style={{
@@ -290,7 +318,7 @@ function Home() {
                             padding: 20,
                             textAlign: 'center'
                         }}
-                    >提供多種還款方式<br/>方便快捷<br/>Convenient Repayment Methods</div>
+                    >提供多種還款方式<br/>方便快捷</div>
                 </div>
             </div>
         </div>

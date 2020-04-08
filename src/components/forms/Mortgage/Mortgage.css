@@ -1,0 +1,18 @@
+#mortgage-form {
+    
+}
+
+#mortgage-form table tr > td:first-child {
+    width: 180px !important;
+}
+#mortgage-form table tr td {
+    font-size: 13px;
+}
+
+#mortgage-form input[type="text"] {
+    width: 100%;
+    border-width: 1px;
+    border-color: #eeeeee;
+    padding: 5px 10px;
+    font-size: 13px;
+}

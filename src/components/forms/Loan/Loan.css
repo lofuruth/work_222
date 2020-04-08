@@ -1,0 +1,25 @@
+#loan-form {
+    flex: 1;
+}
+
+#load-form table {
+    border: none !important;
+}
+#loan-form table tr > td:first-child {
+    width: 180px !important;
+}
+#loan-form table tr td {
+    font-size: 13px;
+    border: 1px solid #eee;
+}
+#loan-form table tr > td:first-child {
+    padding: 0 15px;
+}
+
+#loan-form input[type="text"] {
+    width: 90%;
+    border-width: 1px;
+    border-color: #eeeeee;
+    padding: 5px 10px;
+    font-size: 13px;
+}
