@@ -278,7 +278,7 @@ function Loan() {
                                         style={{
                                             paddingBottom: 15
                                         }}
-                                    ><b>貸款計算器</b></td>
+                                    ><b>私人貸款計算器</b></td>
                                 </tr>
                             </thead>
                             <tbody>

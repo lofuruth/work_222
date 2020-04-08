@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from "react-slick";
+import './Mortgage.css';
 
 
 import 'slick-carousel/slick/slick.css';
@@ -17,22 +18,9 @@ import MortgageForm from '../../components/forms/Mortgage';
 //borrow money 2
 function Mortgage() {
     
-    return <div
-        style={{
-            marginTop: 40
-        }}
-    >
-        <div
-            style={{
-                display: 'flex',
-                justifyContent: 'center'
-            }}
-        >
-            <div
-                style={{
-                    width: 1024
-                }}
-            >
+    return <div id="mortgage">
+        <div>
+            <div className="wrapper">
                 <div>
                     <Slider {...{
                         dots: true,
@@ -99,11 +87,7 @@ function Mortgage() {
                     </Slider>
                 </div>
                 <br/><br/><br/>
-                <div
-                    style={{
-                        display: 'flex'
-                    }}
-                >
+                <div className="content">
                     <div
                         style={{
                             flex: 1,
@@ -111,20 +95,41 @@ function Mortgage() {
                         }}
                     >
                         <div>
-                            申請容易 Easy to apply 申請毋須繁複文件及壓力測試, 可隨時借及隨時還, 零費用 - 送估價費 Simple application that requires simple documents and no stress test. Exempt valuation fee.
+                            <h4
+                                style={{
+                                    margin: 0
+                                }}
+                            >申請容易</h4>
+                            <p>申請毋須繁複文件及壓力測試, 可隨時借及隨時還, 零費用 - 送估價費</p>
                         </div>
                         <br/>
                         <div>
-                            種類繁多 Any property is welcome 適合任何物業, 無論物業一按, 二按或轉按,都為您度身訂做! Gear Credit is allowing you to grasp market opportunities and meet your different financial needs whether your property is mortgaged or not.
+                            <h4
+                                style={{
+                                    margin: 0
+                                }}
+                            >種類繁多</h4>
+                            <p>適合任何物業, 無論物業一按, 二按或轉按,都為您度身訂做!</p>
                         </div>
                         <br/>
                         <div>
-                            貸款額高 High loan amount 貸款額高達樓價8成 Loan-to-value ratio up to 80%
+                            <h4
+                                style={{
+                                    margin: 0
+                                }}
+                            >貸款額高</h4>
+                            <p>貸款額高達樓價8成</p>
                         </div>
                         <br/>
                         <div>
-                            零手續費 No extra fee 免手續費及估價費, 無隱藏費用, 提早還款免罰息 Exempt handling fee and valuation fee. No hidden fee. No default interest for early settlement.
+                            <h4
+                                style={{
+                                    margin: 0
+                                }}
+                            >零手續費</h4>
+                            <p>免手續費及估價費, 無隱藏費用, 提早還款免罰息</p>
                         </div>
+                        <br/>
                         <br/>
                         <div
                             style={{
@@ -140,11 +145,12 @@ function Mortgage() {
                                     style={{
                                         width: 80,
                                         height: 80,
-                                        backgroundColor: '#eee',
+                                        backgroundColor: '#008D83',
                                         borderRadius: '50%',
                                         display: 'flex',
                                         justifyContent: 'center',
-                                        alignItems: 'center'
+                                        alignItems: 'center',
+                                        color: '#fff'
                                     }}
                                 >一按</div>
                             </div>
@@ -157,11 +163,12 @@ function Mortgage() {
                                     style={{
                                         width: 80,
                                         height: 80,
-                                        backgroundColor: '#eee',
+                                        backgroundColor: '#008D83',
                                         borderRadius: '50%',
                                         display: 'flex',
                                         justifyContent: 'center',
-                                        alignItems: 'center'
+                                        alignItems: 'center',
+                                        color: '#fff'
                                     }}
                                 >二按</div>
                             </div>
@@ -174,11 +181,12 @@ function Mortgage() {
                                     style={{
                                         width: 80,
                                         height: 80,
-                                        backgroundColor: '#eee',
+                                        backgroundColor: '#008D83',
                                         borderRadius: '50%',
                                         display: 'flex',
                                         justifyContent: 'center',
-                                        alignItems: 'center'
+                                        alignItems: 'center',
+                                        color: '#fff'
                                     }}
                                 >轉按</div>
                             </div>
@@ -186,20 +194,24 @@ function Mortgage() {
                     </div>
                     <div
                         style={{
-                            flex: 1,
-                            marginLeft: 30
+                            flex: 1
                         }}
                     >
-                        <div>
+                        <div className="calculator">
                             <table width="100%">
                                 <thead>
                                     <tr>
-                                        <td colSpan="3"><b>貸款計算器</b></td>
+                                        <td
+                                            colSpan="3"
+                                            style={{
+                                                paddingBottom: 15
+                                            }}
+                                        ><b>物業按揭計算器</b></td>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td width="100">申請貸款額</td>
+                                        <td width="100">物業價值</td>
                                         <td>
                                             <input
                                                 type="text"
@@ -210,13 +222,28 @@ function Mortgage() {
                                                     padding: '3px 8px',
                                                     fontSize: 13,
                                                     backgroundColor: 'rgb(253, 253, 253)',
-                                                    width: '80%'
+                                                    width: '85%'
                                                 }}
                                             />
                                         </td>
+                                        <td rowSpan="3" width="90">
+                                            <button
+                                                type="button"
+                                                style={{
+                                                    width: 80,
+                                                    height: 80,
+                                                    borderRadius: '50%',
+                                                    borderWidth: 0,
+                                                    cursor: 'pointer',
+                                                    backgroundColor: '#BCB174',
+                                                    color: '#fff',
+                                                    fontSize: 16
+                                                }}
+                                            >計算</button>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>每月平息</td>
+                                        <td>貸款比率</td>
                                         <td>
                                             <input
                                                 type="text"
@@ -227,7 +254,7 @@ function Mortgage() {
                                                     padding: '3px 8px',
                                                     fontSize: 13,
                                                     backgroundColor: 'rgb(253, 253, 253)',
-                                                    width: '80%'
+                                                    width: '85%'
                                                 }}
                                             />
                                         </td>
@@ -244,13 +271,30 @@ function Mortgage() {
                                                     padding: '3px 8px',
                                                     fontSize: 13,
                                                     backgroundColor: 'rgb(253, 253, 253)',
-                                                    width: '80%'
+                                                    width: '85%'
+                                                }}
+                                            />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>年息</td>
+                                        <td>
+                                            <input
+                                                type="text"
+                                                style={{
+                                                    borderRadius: 4,
+                                                    borderWidth: 1,
+                                                    borderColor: '#000',
+                                                    padding: '3px 8px',
+                                                    fontSize: 13,
+                                                    backgroundColor: 'rgb(253, 253, 253)',
+                                                    width: '85%'
                                                 }}
                                             />
                                         </td>
                                     </tr>
                                 </tbody>
-                            </table>
+                            </table>    
                         </div>
                         <br/><br/>
                         <MortgageForm/>

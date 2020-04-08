@@ -87,8 +87,12 @@ function LoanForm() {
                     <td><input type="text"/></td>
                 </tr>
                 <tr>
-                    <td>如何認識英皇財務</td>
-                    <td>
+                    <td>如何認識基業信貸</td>
+                    <td
+                        style={{
+                            padding: 10
+                        }}
+                    >
                         <label>
                             <input type="checkbox"/>
                             網上
@@ -103,31 +107,34 @@ function LoanForm() {
                         </label>
                         <label>
                             <input type="checkbox"/>
-                            巴士廣告
-                        </label>
-                        <label>
-                            <input type="checkbox"/>
                             其他
                         </label>
                     </td>
                 </tr>
                 <tr>
                     <td>申請人請附上以下資料(每個上傳文件必須少於 10MB 和需為 JPG, PNG 或 PDF 的格式)</td>
-                    <td>
+                    <td
+                        style={{
+                            padding: 5
+                        }}
+                    >
                         <label>
                             最近三個月之收入證明(如公司信，糧單及糧簿):
                             <input type="file"/>
                         </label>
+                        <br/>
                         <br/>
                         <label>
                             身份證及工作證及/或公司咭片:
                             <input type="file"/>
                         </label>
                         <br/>
+                        <br/>
                         <label>
                             最近一個月之住址證明(水、電費單及載有本人名之信件):
                             <input type="file"/>
                         </label>
+                        <br/>
                         <br/>
                         <label>
                             自己物業需出示證明(如差餉單、供樓紙等):
@@ -157,7 +164,16 @@ function LoanForm() {
             </div>
             <br/>
             <div>
-                <button type="button">提交</button>
+                <button
+                    type="button"
+                    style={{
+                        backgroundColor: '#008D83',
+                        color: '#fff',
+                        padding: '5px 20px',
+                        borderWidth: 0,
+                        cursor: 'pointer'
+                    }}
+                >提交</button>
             </div>
         </div>
     </div>;

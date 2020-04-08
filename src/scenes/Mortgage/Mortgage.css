@@ -1,0 +1,41 @@
+#mortgage {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+#mortgage > div {
+    display: flex;
+    justify-content: center;
+}
+#mortgage > div .wrapper {
+    width: 1024px;
+}
+
+#mortgage .calculator {
+    width: calc(100%-10px);
+    background-color: #008D83;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+#mortgage .content {
+    display: flex;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #mortgage,
+    #mortgage > div,
+    #mortgage .content {
+        display: block;
+    }
+    #mortgage > div .wrapper {
+        width: auto;
+    }
+    #mortgage .calculator {
+        width: 100%;
+    }
+    #mortgage table {
+        display: block;
+    }
+}

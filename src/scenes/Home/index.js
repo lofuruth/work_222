@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-//import '../../index.css';
+import './Home.css';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -16,20 +16,13 @@ import Concept2 from '../../resources/imgs/concept/concept2.jpg';
 import Concept3 from '../../resources/imgs/concept/concept3.jpg';
 
 
+
+
+
 //first page
 function Home() {
-    return <div
-        style={{
-            marginTop: 40,
-            display: 'flex',
-            justifyContent: 'center'
-        }}
-    >
-        <div
-            style={{
-                width: 1024
-            }}
-        >
+    return <div id="home">
+        <div className="wrapper">
             <div
                 style={{
                     position: 'relative'
@@ -206,20 +199,8 @@ function Home() {
             </div>
 
 
-            <div
-                style={{
-                    display: 'flex',
-                    marginTop: 80
-                }}
-            >
-                <div
-                    style={{
-                        flex: 1,
-                        display: 'flex',
-                        height: 100,
-                        marginRight: 30
-                    }}
-                >
+            <div className="features">
+                <div>
                     <div
                         style={{
                             width: 100,
@@ -247,13 +228,7 @@ function Home() {
                         }}
                     >貸款服務 誠實可靠</div>
                 </div>
-                <div
-                    style={{
-                        flex: 1,
-                        display: 'flex',
-                        height: 100
-                    }}
-                >
+                <div>
                     <div
                         style={{
                             width: 100,
@@ -283,14 +258,7 @@ function Home() {
                         }}
                     >申請手續 簡單快捷</div>
                 </div>
-                <div
-                    style={{
-                        flex: 1,
-                        display: 'flex',
-                        height: 100,
-                        marginLeft: 30
-                    }}
-                >
+                <div>
                     <div
                         style={{
                             width: 100,
