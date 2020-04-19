@@ -1,5 +1,8 @@
 import React from 'react';
-import { Link, useLocation,useHistory,Redirect} from 'react-router-dom';
+import { Link, useLocation,useHistory} from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { useCookies } from 'react-cookie';
+
 import './navBar.css';
 
 import MenuIcon from 'react-ionicons/lib/MdMenu';
@@ -11,6 +14,11 @@ function NavBar() {
     
     var p = useLocation().pathname;
     const history = useHistory();
+    const { t, i18n } = useTranslation();
+
+    const [cookies, setCookie] = useCookies(['lang']);
+    const changeLanguage = lng => i18n.changeLanguage(lng);
+    if (cookies.lang && cookies.lang != i18n.language) changeLanguage(cookies.lang);
 
     
 return <div>
@@ -41,12 +49,12 @@ return <div>
                         <div>
                             <Link to ="/" style={{
                                 fontWeight : (p === "/" ? 700 : 300)
-                            }}>首頁</Link>
+                            }}>{t('home')}</Link>
                         </div>
                         <div>
                             <Link to ="/about-us" style={{
                                 fontWeight: (p === "/about-us"? 700 : 300)
-                            }}>關於我們</Link>
+                            }}>{t('about-us')}</Link>
                         </div>
 
 
@@ -78,7 +86,7 @@ return <div>
                                             fontWeight: ((p === "/loan" || p === "/mortgage") ? 700 : 300),
                                             textDecoration: 'none'
                                         }}
-                                    >貸款產品</button>
+                                    >{t('products')}</button>
                                     <ul style={{
                                         display: 'none',
                                         position: 'absolute',
@@ -109,7 +117,7 @@ return <div>
                                                     color: '#fff',
                                                     width: '100%'
                                                 }}
-                                            >私人貸款</button>
+                                            >{t('loan')}</button>
                                         </li>
                                         <li
                                             style={{
@@ -131,7 +139,7 @@ return <div>
                                                     color: '#fff',
                                                     width: '100%'
                                                 }}
-                                            >物業按揭</button>
+                                            >{t('mortgage')}</button>
                                         </li>
                                     </ul>
                                 </li>
@@ -142,12 +150,12 @@ return <div>
                         <div>
                             <Link to="/faqs" style={{
                                 fontWeight : (p === "/faqs" ? 700 : 300)
-                            }}>常見問題</Link>
+                            }}>{t('faqs')}</Link>
                         </div>
                         <div>
                             <Link to="/contact-us" style={{
                                 fontWeight: (p === "/contact-us" ? 700 : 300)
-                            }}>聯絡我們</Link>
+                            }}>{t('contact-us')}</Link>
                         </div>
                     </div>
                 </div>
@@ -166,7 +174,33 @@ return <div>
                             fontWeight: 400
                         }}
                     >
-                        <div>貸款熱線: 3700 0018</div>
+                        <div><span>{t('hotline')}</span>: 3700 0018</div>
+                        <div>
+                            <button type="button" onClick={e => {
+                                setCookie('lang', e.target.value, { path: '/' });
+                            }} value="en" style={{
+                                borderWidth: 0,
+                                borderColor: 'none',
+                                backgroundColor: 'transparent',
+                                cursor: 'pointer'
+                            }}>EN</button>
+                            <button type="button" onClick={e => {
+                                setCookie('lang', e.target.value, { path: '/' });
+                            }} value="zh" style={{
+                                borderWidth: 0,
+                                borderColor: 'none',
+                                backgroundColor: 'transparent',
+                                cursor: 'pointer'
+                            }}>繁</button>
+                            <button type="button" onClick={e => {
+                                setCookie('lang', e.target.value, { path: '/' });
+                            }} value="cn" style={{
+                                borderWidth: 0,
+                                borderColor: 'none',
+                                backgroundColor: 'transparent',
+                                cursor: 'pointer'
+                            }}>簡</button>
+                        </div>
                     </div>
                     <div>
                         <Link to="/apply"
@@ -178,7 +212,7 @@ return <div>
                                 textDecoration: 'none',
                                 backgroundColor: 'rgb(188,177,116)',
                             }}
-                        >立即申請</Link>
+                        >{t('apply-now')}</Link>
                     </div>
                 </div>
             </div>

@@ -1,25 +1,26 @@
 {
   "files": {
     "main.css": "/static/css/main.3966b798.chunk.css",
-    "main.js": "/static/js/main.8dec272b.chunk.js",
-    "main.js.map": "/static/js/main.8dec272b.chunk.js.map",
+    "main.js": "/static/js/main.ff2c4bc4.chunk.js",
+    "main.js.map": "/static/js/main.ff2c4bc4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.51135c3f.js",
     "runtime-main.js.map": "/static/js/runtime-main.51135c3f.js.map",
     "static/css/2.c60feeff.chunk.css": "/static/css/2.c60feeff.chunk.css",
-    "static/js/2.370d6538.chunk.js": "/static/js/2.370d6538.chunk.js",
-    "static/js/2.370d6538.chunk.js.map": "/static/js/2.370d6538.chunk.js.map",
+    "static/js/2.2ee45d38.chunk.js": "/static/js/2.2ee45d38.chunk.js",
+    "static/js/2.2ee45d38.chunk.js.map": "/static/js/2.2ee45d38.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.986f9e2ed67c20083103b22a03f87b21.js": "/precache-manifest.986f9e2ed67c20083103b22a03f87b21.js",
+    "precache-manifest.65b32f7bfb050ce15600bd5af5f73e0e.js": "/precache-manifest.65b32f7bfb050ce15600bd5af5f73e0e.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.c60feeff.chunk.css.map": "/static/css/2.c60feeff.chunk.css.map",
     "static/css/main.3966b798.chunk.css.map": "/static/css/main.3966b798.chunk.css.map",
-    "static/js/2.370d6538.chunk.js.LICENSE.txt": "/static/js/2.370d6538.chunk.js.LICENSE.txt",
+    "static/js/2.2ee45d38.chunk.js.LICENSE.txt": "/static/js/2.2ee45d38.chunk.js.LICENSE.txt",
     "static/media/abt-banner.jpg": "/static/media/abt-banner.7e5619c5.jpg",
     "static/media/abt-banner2.jpg": "/static/media/abt-banner2.39d78378.jpg",
     "static/media/apply.jpg": "/static/media/apply.85e2ce4e.jpg",
     "static/media/concept1.jpg": "/static/media/concept1.93b3cd32.jpg",
     "static/media/concept2.jpg": "/static/media/concept2.fc05cb31.jpg",
     "static/media/concept3.jpg": "/static/media/concept3.0da2956e.jpg",
+    "static/media/getFetch.cjs": "/static/media/getFetch.ee914aaf.cjs",
     "static/media/honest.jpg": "/static/media/honest.a96a3d4b.jpg",
     "static/media/return.jpg": "/static/media/return.a4d0cafd.jpg",
     "static/media/slick-theme.css": "/static/media/slick.f97e3bbf.svg"
@@ -27,8 +28,8 @@
   "entrypoints": [
     "static/js/runtime-main.51135c3f.js",
     "static/css/2.c60feeff.chunk.css",
-    "static/js/2.370d6538.chunk.js",
+    "static/js/2.2ee45d38.chunk.js",
     "static/css/main.3966b798.chunk.css",
-    "static/js/main.8dec272b.chunk.js"
+    "static/js/main.ff2c4bc4.chunk.js"
   ]
 }
