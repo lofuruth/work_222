@@ -3,14 +3,9 @@
     display: flex;
     justify-content: center;
 }
-#mortgage > div {
-    display: flex;
-    justify-content: center;
-}
-#mortgage > div .wrapper {
+#mortgage .wrapper {
     width: 1024px;
 }
-
 #mortgage .calculator {
     width: calc(100%-10px);
     background-color: #008D83;
@@ -20,22 +15,55 @@
 
 #mortgage .content {
     display: flex;
+    margin-top: 75px;
+}
+
+#mortgage .content > div {
+    flex: 1;
+}
+#mortgage .content > div:first-child {
+    margin-right: 30px;
 }
 
 
 @media only screen and (max-width: 600px) {
-    #mortgage,
-    #mortgage > div,
-    #mortgage .content {
-        display: block;
-    }
-    #mortgage > div .wrapper {
-        width: auto;
-    }
-    #mortgage .calculator {
+    #mortgage .wrapper {
         width: 100%;
     }
-    #mortgage table {
+    #mortgage .wrapper > div:first-child {
+        overflow: hidden;
+        padding-bottom: 55px;
+    }
+    #mortgage .content {
         display: block;
+        margin-top: 0;
+    }
+
+
+    #mortgage .content {
+        display: block;
+        margin-top: 0;
+    }
+    #mortgage .content > div {
+        margin: 0 !important;
+    }
+    #mortgage .content > div:first-child {
+        padding: 15px 25px;
+    }
+    #mortgage .content > div:last-child {
+        margin-top: 35px !important;
+    }
+
+
+    #mortgage #mortgage-form {
+        padding: 0 10px;
+    }
+    #mortgage #mortgage-form > div:last-child {
+        text-align: center;
+    }
+
+    
+    #footer {
+        margin-top: 35px !important;
     }
 }

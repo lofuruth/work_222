@@ -2,6 +2,14 @@
   display: flex;
   justify-content: center;
 }
+#desktop a {
+  color: #008D83;
+  font-size: 15px;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+
 #mobile {
   position: fixed;
   display: none;
@@ -34,9 +42,18 @@
 }
 #mobile .menu > ul > li {
   border-bottom: 1px solid #047971;
-  padding: 8px 20px;
+  padding: 10px 20px;
   text-align: center;
   list-style: none;
+}
+#mobile .menu > ul > li button {
+  color: #fff;
+  font-size: 15px;
+  padding: 0 10px;
+  text-decoration: none;
+  background-color: transparent;
+  border-width: 0;
+  cursor: pointer;
 }
 #mobile .menu > ul > li > div {
   font-weight: 600;

@@ -200,19 +200,19 @@ function MortgageForm() {
                     本人/吾等不同意基業信貸將本人/吾等的個人資料使用及/或轉移作直接促銷之目的。
                 </label>
             </div>
-        </div>
-        <br/>
-        <div>
-            <button
-                type="button"
-                style={{
-                    backgroundColor: '#008D83',
-                    color: '#fff',
-                    padding: '5px 20px',
-                    borderWidth: 0,
-                    cursor: 'pointer'
-                }}
-            >提交</button>
+            <br/>
+            <div>
+                <button
+                    type="button"
+                    style={{
+                        backgroundColor: '#008D83',
+                        color: '#fff',
+                        padding: '5px 20px',
+                        borderWidth: 0,
+                        cursor: 'pointer'
+                    }}
+                >提交</button>
+            </div>
         </div>
     </div>;
 }

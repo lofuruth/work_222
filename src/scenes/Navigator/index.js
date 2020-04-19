@@ -22,7 +22,7 @@ import Footer from "../Footer";
 
 
 
-function Navigator() {
+function Navigator(props) {
     return (
         <div> 
             <NavBar />
@@ -56,9 +56,7 @@ function Navigator() {
                     <Route path="/mortgage" exact>
                         <Mortgage/>
                     </Route>
-                    <Route path="/apply" exact>
-                        <Apply/>
-                    </Route>
+                    <Route exact path="/apply/:type(loan|mortgage)?" component={Apply}/>
 
 
                     <Route>

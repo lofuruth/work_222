@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../index.css';
+import './AboutUs.css';
 
 
 
@@ -11,13 +11,7 @@ import Banner2 from '../../resources/imgs/abt-banner2.jpg';
 //about us
 function AboutUs() {
 
-    return <div
-        style={{
-            marginTop: 40,
-            display: 'flex',
-            justifyContent: 'center'
-        }}
-    >
+    return <div id="about-us">
         <div
             style={{
                 width: 1024
@@ -53,11 +47,7 @@ function AboutUs() {
                 </div>
             </div>
 
-            <section
-                style={{
-                    margin: '60px 0'
-                }}
-            >
+            <section>
                 <p>基業信貸有限公司創辦於2018年，是根據香港放債人條例(香港法例163章)正式註冊成立之認可財務公司。
         主要從事私人貸款及樓宇按揭業務有豐富經驗，能夠充分了解客戶需要，提供合適的貸款計劃，協助客戶解決在財務上的需要。</p>
             </section>

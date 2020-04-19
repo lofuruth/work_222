@@ -1,0 +1,23 @@
+#contact-us {
+    margin-top: 40px;
+}
+#contact-us .content {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+#contact-us .content > div {
+    width: 1024px;
+    display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+    #contact-us .content > div {
+        padding: 0 20px;
+        width: 100%;
+        display: block;
+    }
+    #contact-us .content > div > div:first-child {
+        margin-bottom: 35px;
+    }
+}

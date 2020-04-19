@@ -40,20 +40,12 @@ return <div>
                     >
                         <div>
                             <Link to ="/" style={{
-                                fontWeight : (p === "/" ? 700 : 300),
-                                color: '#008D83',
-                                fontSize: 15,
-                                padding: '0 10px',
-                                textDecoration: 'none'
+                                fontWeight : (p === "/" ? 700 : 300)
                             }}>首頁</Link>
                         </div>
                         <div>
                             <Link to ="/about-us" style={{
-                                fontWeight: (p === "/about-us"? 700 : 300),
-                                color: '#008D83',
-                                fontSize: 15,
-                                padding: '0 10px',
-                                textDecoration: 'none'
+                                fontWeight: (p === "/about-us"? 700 : 300)
                             }}>關於我們</Link>
                         </div>
 
@@ -149,20 +141,12 @@ return <div>
 
                         <div>
                             <Link to="/faqs" style={{
-                                fontWeight : (p === "/faqs" ? 700 : 300),
-                                color: '#008D83',
-                                fontSize: 15,
-                                padding: '0 10px',
-                                textDecoration: 'none'
+                                fontWeight : (p === "/faqs" ? 700 : 300)
                             }}>常見問題</Link>
                         </div>
                         <div>
                             <Link to="/contact-us" style={{
-                                fontWeight: (p === "/contact-us" ? 700 : 300),
-                                color: '#008D83',
-                                fontSize: 15,
-                                padding: '0 10px',
-                                textDecoration: 'none'
+                                fontWeight: (p === "/contact-us" ? 700 : 300)
                             }}>聯絡我們</Link>
                         </div>
                     </div>
@@ -256,14 +240,7 @@ return <div>
                     <li>
                         <button type="button"
                             style={{
-                                fontWeight : (p === "/" ? 700 : 300),
-                                color: '#fff',
-                                fontSize: 15,
-                                padding: '0 10px',
-                                textDecoration: 'none',
-                                backgroundColor: 'transparent',
-                                borderWidth: 0,
-                                cursor: 'pointer'
+                                fontWeight : (p === "/" ? 700 : 300)
                             }}
                             onClick={e => {
                                 let target = e.target;
@@ -277,14 +254,7 @@ return <div>
                     <li>
                         <button type="button"
                             style={{
-                                fontWeight : (p === "/about-us" ? 700 : 300),
-                                color: '#fff',
-                                fontSize: 15,
-                                padding: '0 10px',
-                                textDecoration: 'none',
-                                backgroundColor: 'transparent',
-                                borderWidth: 0,
-                                cursor: 'pointer'
+                                fontWeight : (p === "/about-us" ? 700 : 300)
                             }}
                             onClick={e => {
                                 let target = e.target;
@@ -303,7 +273,7 @@ return <div>
                                     style={{
                                         fontWeight : (p === "/loan" ? 700 : 300),
                                         color: '#fff',
-                                        fontSize: 15,
+                                        fontSize: 13,
                                         padding: '0 10px',
                                         textDecoration: 'none',
                                         backgroundColor: 'transparent',
@@ -324,7 +294,7 @@ return <div>
                                     style={{
                                         fontWeight : (p === "/mortgage" ? 700 : 300),
                                         color: '#fff',
-                                        fontSize: 15,
+                                        fontSize: 13,
                                         padding: '0 10px',
                                         textDecoration: 'none',
                                         backgroundColor: 'transparent',
@@ -345,14 +315,7 @@ return <div>
                     <li>
                         <button type="button"
                             style={{
-                                fontWeight : (p === "/faqs" ? 700 : 300),
-                                color: '#fff',
-                                fontSize: 15,
-                                padding: '0 10px',
-                                textDecoration: 'none',
-                                backgroundColor: 'transparent',
-                                borderWidth: 0,
-                                cursor: 'pointer'
+                                fontWeight : (p === "/faqs" ? 700 : 300)
                             }}
                             onClick={e => {
                                 let target = e.target;
@@ -366,14 +329,7 @@ return <div>
                     <li>
                         <button type="button"
                             style={{
-                                fontWeight : (p === "/contact-us" ? 700 : 300),
-                                color: '#fff',
-                                fontSize: 15,
-                                padding: '0 10px',
-                                textDecoration: 'none',
-                                backgroundColor: 'transparent',
-                                borderWidth: 0,
-                                cursor: 'pointer'
+                                fontWeight : (p === "/contact-us" ? 700 : 300)
                             }}
                             onClick={e => {
                                 let target = e.target;
@@ -387,14 +343,7 @@ return <div>
                     <li>
                         <button type="button"
                             style={{
-                                fontWeight : (p === "/apply" ? 700 : 300),
-                                color: '#fff',
-                                fontSize: 15,
-                                padding: '0 10px',
-                                textDecoration: 'none',
-                                backgroundColor: 'transparent',
-                                borderWidth: 0,
-                                cursor: 'pointer'
+                                fontWeight : (p === "/apply" ? 700 : 300)
                             }}
                             onClick={e => {
                                 let target = e.target;

@@ -16,11 +16,7 @@ import Concept3 from '../../resources/imgs/concept/concept3.jpg';
 //borrow money 1
 function Loan() { 
     return <div id="loan">
-        <div
-            style={{
-                width: 1024
-            }}
-        >
+        <div className="wrapper">
             <div>
                 <Slider {...{
                     dots: true,
@@ -86,18 +82,8 @@ function Loan() {
                     </div>
                 </Slider>
             </div>
-            <br/><br/><br/>
-            <div
-                style={{
-                    display: 'flex'
-                }}
-            >
-                <div
-                    style={{
-                        flex: 1,
-                        marginReft: 30
-                    }}
-                >
+            <div className="content">
+                <div>
                     <div
                         style={{
                             width: '95%'
@@ -263,12 +249,7 @@ function Loan() {
                         </div>
                     </div>
                 </div>
-                <div
-                    style={{
-                        flex: 1,
-                        marginLeft: 30
-                    }}
-                >
+                <div>
                     <div className="calculator">
                         <table width="100%">
                             <thead>

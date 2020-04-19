@@ -1,14 +1,12 @@
 import React from 'react';
 import GoogleMapReact from 'google-map-react';
 
-//contact us
+import './ContactUs.css';
 
+
+//contact us
 function ContactUs() {
-    return <div
-        style={{
-            marginTop: 40
-        }}
-    >
+    return <div id="contact-us">
         <div
             style={{
                 height: 380
@@ -32,29 +30,18 @@ function ContactUs() {
             </GoogleMapReact>
         </div>
 
-        <div
-            style={{
-                display: 'flex',
-                justifyContent: 'center',
-                marginTop: 60
-            }}
-        >
-            <div
-                style={{
-                    width: 1024,
-                    display: 'flex'
-                }}
-            >
+        <div className="content">
+            <div>
                 <div
                     style={{
                         flex: 1
                     }}
-                >如有任何查詢歡迎留言<br></br>Tell us about your issue so we can help you more quickly.</div>
+                >如有任何查詢歡迎留言</div>
                 <div
                     style={{
                         flex: 1
                     }}
-                >電話: 3700 0018</div>
+                >電話: +852 3700 0018</div>
                 <div
                     style={{
                         flex: 1
@@ -64,8 +51,7 @@ function ContactUs() {
                     style={{
                         flex: 1
                     }}
-                >地址: 香港中環德輔道中104號詹氏商業大廈4樓全層<br></br>ADDRESS:
-    4/F, Jim’s Commercial Building, 104 Des Voeux Road Central, Central, Hong Kong</div>
+                >地址: 香港中環德輔道中104號詹氏商業大廈4樓全層</div>
             </div>
         </div>
     </div>

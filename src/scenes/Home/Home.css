@@ -29,7 +29,11 @@
         display: block;
     }
     #home .wrapper {
-        width: auto;
+        width: 100%;
+    }
+    #home .wrapper > div:first-child {
+        overflow: hidden;
+        padding-bottom: 55px;
     }
     #home .features {
         flex-direction: column;

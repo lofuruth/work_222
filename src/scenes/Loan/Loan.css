@@ -3,10 +3,63 @@
     display: flex;
     justify-content: center;
 }
-
+#loan .wrapper {
+    width: 1024px;
+}
 #loan .calculator {
     width: calc(100%-10px);
     background-color: #008D83;
     color: #fff;
     padding: 10px 20px;
+}
+
+
+
+#loan .content {
+    display: flex;
+    margin-top: 75px;
+}
+
+#loan .content > div {
+    flex: 1;
+}
+#loan .content > div:last-child {
+    margin-left: 30px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #loan .wrapper {
+        width: 100%;
+    }
+    #loan .wrapper > div:first-child {
+        overflow: hidden;
+        padding-bottom: 55px;
+    }
+
+    
+    #loan .content {
+        display: block;
+        margin-top: 0;
+    }
+    #loan .content > div {
+        margin: 0 !important;
+    }
+    #loan .content > div:first-child {
+        padding: 15px 25px;
+    }
+    #loan .content > div:last-child {
+        margin-top: 35px !important;
+    }
+
+
+    #loan #loan-form {
+        padding: 0 10px;
+    }
+    #loan #loan-form > div:last-child {
+        text-align: center;
+    }
+    #footer {
+        margin-top: 35px !important;
+    }
 }
