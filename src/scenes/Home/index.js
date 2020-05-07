@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Slider from "react-slick";
 import './Home.css';
 
@@ -21,6 +21,7 @@ import Concept3 from '../../resources/imgs/concept/concept3.jpg';
 
 //first page
 function Home() {
+    const [loan, setLoan] = useState({});
     return <div id="home">
         <div className="wrapper">
             <div
@@ -133,6 +134,11 @@ function Home() {
                                             backgroundColor: 'rgb(253, 253, 253)',
                                             width: '80%'
                                         }}
+                                        onChange={e => {
+                                            let values = loan || {};
+                                            values.amount = parseInt(e.target.value||'0');
+                                            setLoan(values);
+                                        }}
                                     />
                                 </td>
                             </tr>
@@ -150,6 +156,11 @@ function Home() {
                                             backgroundColor: 'rgb(253, 253, 253)',
                                             width: '80%'
                                         }}
+                                        onChange={e => {
+                                            let values = loan || {};
+                                            values.rate = parseFloat(e.target.value||'1');
+                                            setLoan(values);
+                                        }}
                                     />
                                 </td>
                             </tr>
@@ -166,6 +177,11 @@ function Home() {
                                             fontSize: 13,
                                             backgroundColor: 'rgb(253, 253, 253)',
                                             width: '80%'
+                                        }}
+                                        onChange={e => {
+                                            let values = loan || {};
+                                            values.installment = parseInt(e.target.value||'1');
+                                            setLoan(values);
                                         }}
                                     />
                                 </td>
@@ -189,6 +205,12 @@ function Home() {
                                             borderWidth: 0,
                                             fontSize: 13,
                                             color: 'rgb(255,255,255)'
+                                        }}
+                                        onClick={e => {
+                                            let newWin = window.open("about:blank", "hello", "width=320,height=240");
+                                            newWin.document.write(`<div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; background-color: #008D83; padding: 0; margin: 0; color: #fff; flex-direction: column;">` +
+                                                `<h3 style="margin: 0;">Monthly repayment will be:</h3><p>HK$${Math.round(((loan.amount||0)+(loan.amount||0)*((loan.rate||1)/1000)*(loan.installment||1))/(loan.installment||1))}</p>` +
+                                            `</div>`);
                                         }}
                                     >計算</button>
                                 </td>

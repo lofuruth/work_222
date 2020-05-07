@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Slider from "react-slick";
 import './Mortgage.css';
 
@@ -15,8 +15,37 @@ import Concept3 from '../../resources/imgs/concept/concept3.jpg';
 import MortgageForm from '../../components/forms/Mortgage';
 
 
+function PMT(ir, np, pv, fv, type) {
+    /*
+     * ir   - interest rate per month
+     * np   - number of periods (months)
+     * pv   - present value
+     * fv   - future value
+     * type - when the payments are due:
+     *        0: end of the period, e.g. end of month (default)
+     *        1: beginning of period
+     */
+    var pmt, pvif;
+
+    fv || (fv = 0);
+    type || (type = 0);
+
+    if (ir === 0)
+        return -(pv + fv)/np;
+
+    pvif = Math.pow(1 + ir, np);
+    pmt = - ir * pv * (pvif + fv) / (pvif - 1);
+
+    if (type === 1)
+        pmt /= (1 + ir);
+
+    return pmt;
+}
+
+
 //borrow money 2
 function Mortgage() {
+    const [mortgage, setMortgage] = useState({});
     
     return <div id="mortgage">
         <div className="wrapper">
@@ -213,6 +242,11 @@ function Mortgage() {
                                                 backgroundColor: 'rgb(253, 253, 253)',
                                                 width: '85%'
                                             }}
+                                            onChange={e => {
+                                                let values = mortgage || {};
+                                                values.pv = parseInt(e.target.value || '1');
+                                                setMortgage(values);
+                                            }}
                                         />
                                     </td>
                                     <td rowSpan="3" width="90">
@@ -227,6 +261,12 @@ function Mortgage() {
                                                 backgroundColor: '#BCB174',
                                                 color: '#fff',
                                                 fontSize: 16
+                                            }}
+                                            onClick={e => {
+                                                let newWin = window.open("about:blank", "hello", "width=320,height=240");
+                                                newWin.document.write(`<div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; background-color: #008D83; padding: 0; margin: 0; color: #fff; flex-direction: column;">` +
+                                                    `<h3 style="margin: 0;">Monthly instalment payment will be:</h3><p>HK$${Math.round(PMT((mortgage.rate||1)/12, (mortgage.months || 1), (mortgage.pv || 1) * (mortgage.ratio||1)) * -1)}</p>` +
+                                                `</div>`);
                                             }}
                                         >計算</button>
                                     </td>
@@ -245,6 +285,11 @@ function Mortgage() {
                                                 backgroundColor: 'rgb(253, 253, 253)',
                                                 width: '85%'
                                             }}
+                                            onChange={e => {
+                                                let values = mortgage || {};
+                                                values.ratio = parseInt(e.target.value || '1')/100;
+                                                setMortgage(values);
+                                            }}
                                         />
                                     </td>
                                 </tr>
@@ -262,6 +307,11 @@ function Mortgage() {
                                                 backgroundColor: 'rgb(253, 253, 253)',
                                                 width: '85%'
                                             }}
+                                            onChange={e => {
+                                                let values = mortgage || {};
+                                                values.months = parseInt(e.target.value || '1') * 12;
+                                                setMortgage(values);
+                                            }}
                                         />
                                     </td>
                                 </tr>
@@ -278,6 +328,11 @@ function Mortgage() {
                                                 fontSize: 13,
                                                 backgroundColor: 'rgb(253, 253, 253)',
                                                 width: '85%'
+                                            }}
+                                            onChange={e => {
+                                                let values = mortgage || {};
+                                                values.rate = parseFloat(e.target.value || '1')/100;
+                                                setMortgage(values);
                                             }}
                                         />
                                     </td>
